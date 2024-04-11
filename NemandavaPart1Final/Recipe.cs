@@ -43,6 +43,22 @@ namespace NemandavaPart1Final
                 Console.WriteLine($"{i + 1}. {Steps[i]}");
             }
         }
-
+        public void ScaleRecipe(double factor)
+        {
+            foreach (var ingredient in Ingredients)
+            {
+                ingredient.Quantity *= factor;
+            }
+        }
+        public void ResetQuantities()
+        {
+            foreach (var ingredient in Ingredients)
+            {
+                ingredient.Quantity = ingredient.OriginalQuantity;
+            }
+        }
+       
     }
+
 }
+

@@ -1,7 +1,9 @@
-﻿using System;
+﻿using NemandavaPart1Final;
+using System;
 
-class Program
-{
+
+    class Program
+    {
     static void Main(string[] args)
     {
         Console.Write("Enter the number of ingredients: ");
@@ -36,6 +38,35 @@ class Program
 
         recipe.DisplayRecipe();
 
-       
+        while (true)
+        {
+            Console.WriteLine("\nOptions:");
+            Console.WriteLine("1. Scale recipe");
+            Console.WriteLine("2. Reset quantities");
+            Console.WriteLine("3. Clear recipe");
+            Console.WriteLine("4. Exit");
+
+            Console.Write("\nEnter option: ");
+            int option = int.Parse(Console.ReadLine());
+
+            switch (option)
+            {
+                case 1:
+                    Console.Write("Enter scaling factor (0.5, 2, or 3): ");
+                    double factor = double.Parse(Console.ReadLine());
+                    recipe.ScaleRecipe(factor);
+                    recipe.DisplayRecipe();
+                    break;
+                case 2:
+                    recipe.ResetQuantities();
+                    recipe.DisplayRecipe();
+                    break;
+
+            }
+        }
     }
-}
+    }
+
+
+
+  

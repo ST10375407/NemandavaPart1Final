@@ -8,6 +8,8 @@ namespace NemandavaPart1Final
 {
     internal class Step
     {
+        public string Description { get; set; }
+
 
     }
 }

@@ -20,5 +20,6 @@ namespace NemandavaPart1Final
             OriginalQuantity = quantity;
             Unit = unit;
         }
+        
     }
 }
