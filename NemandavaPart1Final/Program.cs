@@ -77,14 +77,18 @@ class Program
             }
         }
     }
+        // invalid numbers
         catch (FormatException)
         {
             Console.WriteLine("Invalid input.Enter a correct number");
+
         }
+        //correct number length
         catch (OverflowException)
         {
             Console.WriteLine("Number is not in the correct length for the expected format.");
         }
+
         catch (Exception ex)
         {
             Console.WriteLine("An error occurred: " + ex.Message);
