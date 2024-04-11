@@ -8,6 +8,7 @@ class Program
     {
         try
         {
+            // Getting details for a sing recipe
             Console.Write("Enter the number of ingredients: ");
         int ingredientCount = int.Parse(Console.ReadLine());
 
@@ -16,7 +17,8 @@ class Program
 
         Recipe recipe = new Recipe(ingredientCount, stepCount);
 
-        for (int i = 0; i < ingredientCount; i++)
+
+        for (int i = 0; i < ingredientCount; i++) //for loop
         {
             Console.Write($"Enter the name of ingredient {i + 1}: ");
             string name = Console.ReadLine();
@@ -30,7 +32,7 @@ class Program
             recipe.AddIngredient(name, quantity, unit);
         }
 
-        for (int i = 0; i < stepCount; i++)
+        for (int i = 0; i < stepCount; i++) //for loop
         {
             Console.Write($"Enter step {i + 1}: ");
             string step = Console.ReadLine();
@@ -88,7 +90,7 @@ class Program
         {
             Console.WriteLine("Number is not in the correct length for the expected format.");
         }
-
+        //for any other exception
         catch (Exception ex)
         {
             Console.WriteLine("An error occurred: " + ex.Message);
