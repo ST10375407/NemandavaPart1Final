@@ -42,7 +42,7 @@ class Program
 
         recipe.DisplayRecipe();
 
-        while (true)
+        while (true) // while loop for the menu display
         {
             Console.WriteLine("\nOptions:");
             Console.WriteLine("1. Scale recipe");
