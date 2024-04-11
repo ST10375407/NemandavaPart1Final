@@ -59,8 +59,7 @@ namespace NemandavaPart1Final
         }
         public void ClearRecipe()
         {
-            Ingredients = new Ingredient[Ingredients.Length];
-            Steps = new string[Steps.Length];
+            //put nothing to let it clear nothing
         }
 
     }
