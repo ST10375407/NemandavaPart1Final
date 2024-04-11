@@ -61,6 +61,16 @@ using System;
                     recipe.ResetQuantities();
                     recipe.DisplayRecipe();
                     break;
+                case 3:
+                    recipe.ClearRecipe();
+                    Console.WriteLine("Recipe cleared.");
+                    break;
+                case 4:
+                    Environment.Exit(0);
+                    break;
+                default:
+                    Console.WriteLine("Invalid option.");
+                    break;
 
             }
         }
