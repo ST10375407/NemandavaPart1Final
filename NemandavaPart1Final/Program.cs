@@ -2,11 +2,13 @@
 using System;
 
 
-    class Program
-    {
+class Program
+{ 
     static void Main(string[] args)
     {
-        Console.Write("Enter the number of ingredients: ");
+        try
+        {
+            Console.Write("Enter the number of ingredients: ");
         int ingredientCount = int.Parse(Console.ReadLine());
 
         Console.Write("Enter the number of steps: ");
@@ -75,8 +77,19 @@ using System;
             }
         }
     }
+        catch (FormatException)
+        {
+            Console.WriteLine("Invalid input.Enter a correct number");
+        }
+        catch (OverflowException)
+        {
+            Console.WriteLine("Number is too large or too small for the expected format.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("An error occurred: " + ex.Message);
+        }
     }
-
-
+}
 
   
