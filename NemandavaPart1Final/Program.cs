@@ -83,7 +83,7 @@ class Program
         }
         catch (OverflowException)
         {
-            Console.WriteLine("Number is too large or too small for the expected format.");
+            Console.WriteLine("Number is not in the correct length for the expected format.");
         }
         catch (Exception ex)
         {
