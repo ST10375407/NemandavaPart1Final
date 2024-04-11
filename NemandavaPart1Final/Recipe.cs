@@ -57,8 +57,12 @@ namespace NemandavaPart1Final
                 ingredient.Quantity = ingredient.OriginalQuantity;
             }
         }
+        public void ClearRecipe()
+        {
+            Ingredients = new Ingredient[Ingredients.Length];
+            Steps = new string[Steps.Length];
+        }
 
-       
     }
 
 }
