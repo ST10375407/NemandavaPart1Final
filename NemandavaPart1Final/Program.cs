@@ -9,6 +9,7 @@ class Program
         try
         {
             // Getting details for a sing recipe
+            Console.WriteLine("**Sanele app**");
             Console.Write("Enter the number of ingredients: ");
         int ingredientCount = int.Parse(Console.ReadLine());
 
